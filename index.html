@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IG Feed Alba (Bootstrap)</title>
+</head>
+
+<body>
+    <!-- nav bar: -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- parte izquierda: -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717244796/instagram-logo-instagram-icon-transparent-free-png_lodk1b.png"
+                        alt="Logo-instagram" width="30" height="30" class="d-inline-block align-top">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717244744/instagram_eqbg8x.png"
+                        alt="Texto-instagram" height="30" class="d-inline-block align-top">
+                </a>
+            </div>
+            <!-- parte derecha: -->
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-instagram me-3" data-bs-toggle="modal"
+                    data-bs-target="#Nueva-publi">
+                    Nueva publicación
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Mensajes</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" id="Nueva-publi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear nueva publicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Redacta tu texto</p>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Escribe aquí tu publicación"
+                            style="height: 150px;"></textarea>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-camera me-3" style="font-size: 18px;"></i>
+                        <i class="fa-solid fa-location-dot" style="font-size: 18px;"></i>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- pestaña para seleccionar apartado: -->
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-table"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="fa-regular fa-square"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="container text-center tab-pane fade show active" id="pills-home" role="tabpanel"
+            aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="row">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
+                    alt="foto-camper-1-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
+                    alt="foto-camper-2-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-and-man-telecommuting-during-a-camper-van-tr-2023-11-27-04-49-33-utc_x3zv7c.jpg"
+                    alt="foto-camper-3-feed" class="col-4 image-grid img-fluid p-1">
+            </div>
+            <div class="row">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507214/friends-travelling-in-campervan-2023-11-27-04-52-55-utc_bjz5g3.jpg"
+                    alt="foto-camper-4-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-teleworking-sitting-in-the-door-of-campervan-2023-11-27-05-31-31-utc_zwwn4p.jpg"
+                    alt="foto-camper-5-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/beautiful-woman-in-a-camper-van-2023-11-27-05-00-57-utc_mvapr8.jpg"
+                    alt="foto-camper-6-feed" class="col-4 image-grid img-fluid p-1">
+            </div>
+            <div class="row">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/inside-view-from-a-campervan-whit-surfer-outside-w-2023-11-27-05-36-59-utc_cx1cyp.jpg"
+                    alt="foto-camper-7-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-leaning-on-campervan-with-camera-2023-11-27-05-17-32-utc_ptjrpy.jpg"
+                    alt="foto-camper-8-feed" class="col-4 image-grid img-fluid p-1">
+                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1718045992/garland-of-light-bulbs-on-camper-background-2023-11-27-05-24-17-utc_cdkqyy.jpg"
+                    alt="foto-camper-9-feed" class="col-4 image-grid img-fluid p-1">
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <!-- feed en columna: -->
+        <div class="container">
+
+            <div class="col-12 col-sm-12 col-md-8 col-lg-4 mx-auto">
+                <div class="card">
+                    <div class="d-flex justify-content-between p-2">
+                        <p class="usuario mb-0">albanebotlopez</p>
+                        <p class="fecha mb-0">03/06/2024</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
+                        class="card-img-top" alt="foto-camper-1">
+                    <div class="card-body">
+                        <h5 class="card-title">100 likes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                            necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
+                            expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="d-flex justify-content-between p-2">
+                        <p class="usuario mb-0">albanebotlopez</p>
+                        <p class="fecha mb-0">03/06/2024</p>
+                    </div>
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
+                        class="card-img-top" alt="foto-camper-2">
+                    <div class="card-body">
+                        <h5 class="card-title">100 likes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                            necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
+                            expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

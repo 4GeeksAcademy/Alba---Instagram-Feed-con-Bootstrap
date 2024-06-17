@@ -1,0 +1,15 @@
+body{
+    font-family: Montserrat;
+}
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-instagram {
+    background-color: #8134Af;
+    color: white;
+}
+.btn-instagram:hover {
+    background-color: #DD2A7B;
+    color: white;
+}
