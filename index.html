@@ -17,23 +17,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>IG Feed Alba (Bootstrap)</title>
+    <title>IG Feed Alba (Lineamientos de Codigo)</title>
 </head>
 
 <body>
     <!-- nav bar: -->
     <nav class="navbar bg-body-tertiary">
         <div class="container d-flex justify-content-between align-items-center">
-            <!-- parte izquierda: -->
+            <!-- Parte izquierda -->
             <div class="d-flex align-items-center">
                 <a class="navbar-brand" href="#">
                     <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717244796/instagram-logo-instagram-icon-transparent-free-png_lodk1b.png"
-                        alt="Logo-instagram" width="30" height="30" class="d-inline-block align-top">
+                        alt="Logo de Instagram" width="30" height="30" class="d-inline-block align-top">
                     <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717244744/instagram_eqbg8x.png"
-                        alt="Texto-instagram" height="30" class="d-inline-block align-top">
+                        alt="Texto Instagram" height="30" class="d-inline-block align-top">
                 </a>
             </div>
-            <!-- parte derecha: -->
+            <!-- Parte derecha -->
             <div class="d-flex align-items-center">
                 <button type="button" class="btn btn-instagram me-3" data-bs-toggle="modal"
                     data-bs-target="#Nueva-publi">
@@ -57,22 +57,22 @@
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" tabindex="-1" id="Nueva-publi">
+    <div class="modal fade" id="Nueva-publi" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Crear nueva publicación</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <p>Redacta tu texto</p>
                     <div class="mb-3">
-                        <textarea class="form-control" placeholder="Escribe aquí tu publicación"
-                            style="height: 150px;"></textarea>
+                        <textarea class="form-control custom-textarea"
+                            placeholder="Escribe aquí tu publicación"></textarea>
                     </div>
                     <div class="d-flex align-items-center">
-                        <i class="fa-solid fa-camera me-3" style="font-size: 18px;"></i>
-                        <i class="fa-solid fa-location-dot" style="font-size: 18px;"></i>
+                        <i class="fa-solid fa-camera me-3 custom-icon"></i>
+                        <i class="fa-solid fa-location-dot custom-icon"></i>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -96,74 +96,99 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
                 type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                <i class="fa-regular fa-square"></i></button>
+                <i class="fa-regular fa-square"></i>
+            </button>
         </li>
     </ul>
+    <!-- Contenido de las pestañas -->
     <div class="tab-content" id="pills-tabContent">
+        <!-- Contenido de la pestaña "Home" -->
         <div class="container text-center tab-pane fade show active" id="pills-home" role="tabpanel"
             aria-labelledby="pills-home-tab" tabindex="0">
             <div class="row">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
-                    alt="foto-camper-1-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
-                    alt="foto-camper-2-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-and-man-telecommuting-during-a-camper-van-tr-2023-11-27-04-49-33-utc_x3zv7c.jpg"
-                    alt="foto-camper-3-feed" class="col-4 image-grid img-fluid p-1">
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
+                        alt="foto-camper-1-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
+                        alt="foto-camper-2-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-and-man-telecommuting-during-a-camper-van-tr-2023-11-27-04-49-33-utc_x3zv7c.jpg"
+                        alt="foto-camper-3-feed" class="img-fluid">
+                </div>
             </div>
             <div class="row">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507214/friends-travelling-in-campervan-2023-11-27-04-52-55-utc_bjz5g3.jpg"
-                    alt="foto-camper-4-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-teleworking-sitting-in-the-door-of-campervan-2023-11-27-05-31-31-utc_zwwn4p.jpg"
-                    alt="foto-camper-5-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/beautiful-woman-in-a-camper-van-2023-11-27-05-00-57-utc_mvapr8.jpg"
-                    alt="foto-camper-6-feed" class="col-4 image-grid img-fluid p-1">
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507214/friends-travelling-in-campervan-2023-11-27-04-52-55-utc_bjz5g3.jpg"
+                        alt="foto-camper-4-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-teleworking-sitting-in-the-door-of-campervan-2023-11-27-05-31-31-utc_zwwn4p.jpg"
+                        alt="foto-camper-5-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/beautiful-woman-in-a-camper-van-2023-11-27-05-00-57-utc_mvapr8.jpg"
+                        alt="foto-camper-6-feed" class="img-fluid">
+                </div>
             </div>
             <div class="row">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/inside-view-from-a-campervan-whit-surfer-outside-w-2023-11-27-05-36-59-utc_cx1cyp.jpg"
-                    alt="foto-camper-7-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-leaning-on-campervan-with-camera-2023-11-27-05-17-32-utc_ptjrpy.jpg"
-                    alt="foto-camper-8-feed" class="col-4 image-grid img-fluid p-1">
-                <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1718045992/garland-of-light-bulbs-on-camper-background-2023-11-27-05-24-17-utc_cdkqyy.jpg"
-                    alt="foto-camper-9-feed" class="col-4 image-grid img-fluid p-1">
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507211/inside-view-from-a-campervan-whit-surfer-outside-w-2023-11-27-05-36-59-utc_cx1cyp.jpg"
+                        alt="foto-camper-7-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-leaning-on-campervan-with-camera-2023-11-27-05-17-32-utc_ptjrpy.jpg"
+                        alt="foto-camper-8-feed" class="img-fluid">
+                </div>
+                <div class="col-4 p-1">
+                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1718045992/garland-of-light-bulbs-on-camper-background-2023-11-27-05-24-17-utc_cdkqyy.jpg"
+                        alt="foto-camper-9-feed" class="img-fluid">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        <!-- feed en columna: -->
-        <div class="container">
+        <!-- Contenido de la pestaña "Profile" -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <!-- Feed en columna -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-4">
+                        <!-- Primera tarjeta -->
+                        <div class="card mb-4">
+                            <div class="d-flex justify-content-between p-2">
+                                <p class="usuario mb-0">albanebotlopez</p>
+                                <p class="fecha mb-0">03/06/2024</p>
+                            </div>
+                            <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
+                                class="card-img-top" alt="foto-camper-1">
+                            <div class="card-body">
+                                <h5 class="card-title">100 likes</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                                    necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
+                                    expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
+                            </div>
+                        </div>
 
-            <div class="col-12 col-sm-12 col-md-8 col-lg-4 mx-auto">
-                <div class="card">
-                    <div class="d-flex justify-content-between p-2">
-                        <p class="usuario mb-0">albanebotlopez</p>
-                        <p class="fecha mb-0">03/06/2024</p>
-                    </div>
-                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507213/woman-teleworking-sitting-in-the-door-of-a-camper-2023-11-27-05-29-46-utc_tk3gqn.jpg"
-                        class="card-img-top" alt="foto-camper-1">
-                    <div class="card-body">
-                        <h5 class="card-title">100 likes</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
-                            necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
-                            expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="d-flex justify-content-between p-2">
-                        <p class="usuario mb-0">albanebotlopez</p>
-                        <p class="fecha mb-0">03/06/2024</p>
-                    </div>
-                    <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
-                        class="card-img-top" alt="foto-camper-2">
-                    <div class="card-body">
-                        <h5 class="card-title">100 likes</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
-                            necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
-                            expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
+                        <!-- Segunda tarjeta -->
+                        <div class="card">
+                            <div class="d-flex justify-content-between p-2">
+                                <p class="usuario mb-0">albanebotlopez</p>
+                                <p class="fecha mb-0">03/06/2024</p>
+                            </div>
+                            <img src="https://res.cloudinary.com/dx4vddpud/image/upload/v1717507212/woman-taking-photo-with-mobile-of-her-friends-pigg-2023-11-27-05-09-52-utc_trwy7n.jpg"
+                                class="card-img-top" alt="foto-camper-2">
+                            <div class="card-body">
+                                <h5 class="card-title">100 likes</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                                    necessitatibus. Magnam voluptas eveniet adipisci. Iure incidunt nulla adipisci, unde
+                                    expedita vel molestiae quasi. Sit voluptates in nobis cum at hic!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
